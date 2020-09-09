@@ -6,6 +6,9 @@
 <html>
 <head>
 <title>Home</title>
+
+<!-- 추가한 css파일 20-09-09 -->
+<link rel="stylesheet" href="resources/css/style.css" type="text/css">
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -17,7 +20,7 @@
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-<a href="/board/list">게시판</a>
+<!-- <a href="/board/list">게시판</a> -->
 <br />
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -37,22 +40,31 @@
 <body>
 	<form name='homeForm' method="post" action="/member/login">
 		<c:if test="${member == null}">
-			<div>
-				<label  for="userId">아이디</label> <input type="text" id="userId"
-					name="userId">
-			</div>
-			<div>
-				<label for="userPass">패스워드</label> <input type="password" id="userPass"
-					name="userPass">
-			</div>
-			<div>
-				<button type="submit">로그인</button>
-				<button id="registerBtn" type="button">회원가입</button>
-			</div>
+
+			<!-- css효과 적용 class명 입력 20-09-09-->
+			<div class="login-box">
+				<h1>Login</h1>
+				<div class="textbox">
+				<i class="fas fa-user"></i>
+					<label for="userId">아이디</label> <input type="text" id="userId"
+						name="userId" placeholder="Username">
+				</div>
+				<div class="textbox">
+					<!-- css효과 적용 class명 입력 20-09-09-->
+					<i class="fas fa-lock"></i>
+					<!-- css효과 적용 class명 입력 -->
+					<label for="userPass">패스워드</label> <input type="password"
+						id="userPass" name="userPass" placeholder="Password">
+				</div>
+				
+					<button type="submit" class="btn">Sign in</button>
+					<!-- css효과 적용 class명 입력 20-09-09-->
+					<button id="registerBtn" type="button" class="btn" >회원가입</button>
+				</div>
 		</c:if>
 		<c:if test="${member != null }">
 			<div>
-				<p>${member.userId}님환영 합니다.</p>
+				<p>${member.userId}님환영합니다.</p>
 				<button id="memberUpdateBtn" type="button">회원정보수정</button>
 				<button id="logoutBtn" type="button">로그아웃</button>
 			</div>
