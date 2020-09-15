@@ -4,6 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <html>
 <head>
+<link rel="stylesheet" href="/resources/css/style.css" type="text/css">
 <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -60,6 +61,7 @@
 <body>
 	<section id="container">
 		<form id="updateForm" action="/member/memberUpdate" method="post">
+		<div class="login-box">
 			<div class="form-group has-feedback">
 				<label class="control-label" for="userId">아이디</label> <input
 					class="form-control" type="text" id="userId" name="userId"
@@ -74,11 +76,14 @@
 					class="form-control" type="text" id="userName" name="userName"
 					value="${member.userName}" />
 			</div>
-		</form>
+		
 		<div class="form-group has-feedback">
 			<button class="btn btn-success" type="button" id="submit">회원정보수정</button>
 			<button class="cencle btn btn-danger" type="button">취소</button>
 		</div>
+		</div>
+		</form>
+		
 	</section>
 
 </body>

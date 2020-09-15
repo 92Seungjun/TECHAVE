@@ -46,15 +46,14 @@
 				<h1>Login</h1>
 				<div class="textbox">
 				<i class="fas fa-user"></i>
-					<label for="userId">아이디</label> <input type="text" id="userId"
-						name="userId" placeholder="Username">
+					<label for="userId">아이디</label> 
+					<input type="text" id="userId"	name="userId" placeholder="Username">
 				</div>
 				<div class="textbox">
 					<!-- css효과 적용 class명 입력 20-09-09-->
 					<i class="fas fa-lock"></i>
 					<!-- css효과 적용 class명 입력 -->
-					<label for="userPass">패스워드</label> <input type="password"
-						id="userPass" name="userPass" placeholder="Password">
+					<label for="userPass">패스워드</label> <input type="password" id="userPass" name="userPass" placeholder="Password">
 				</div>
 				
 					<button type="submit" class="btn">Sign in</button>
@@ -63,10 +62,13 @@
 				</div>
 		</c:if>
 		<c:if test="${member != null }">
+		<div class="login-box">
 			<div>
-				<p>${member.userId}님환영합니다.</p>
-				<button id="memberUpdateBtn" type="button">회원정보수정</button>
-				<button id="logoutBtn" type="button">로그아웃</button>
+				<p><center><h3>${member.userId}님환영합니다.</h3></center></p>
+				<button id="memberUpdateBtn" type="button" class="btn">회원정보수정</button>
+				<button id="logoutBtn" type="button" class="btn">로그아웃</button>
+				<a href="/board/list" class="btn">게시판</a>
+			</div>
 			</div>
 		</c:if>
 		<c:if test="${msg == false}">
