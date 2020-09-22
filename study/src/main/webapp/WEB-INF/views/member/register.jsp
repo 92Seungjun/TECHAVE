@@ -70,8 +70,8 @@
 </script>
 <body>
 	<section id="container">
+	<div class="login-box">
 		<form action="/member/register" method="post" id="regForm">
-			<div class="login-box">
 			<div class="textbox">
 				<label for="userId">아이디</label> 
 				<input class="form-control" type="text" id="userId" name="userId" />
@@ -87,14 +87,14 @@
 					class="form-control" type="text" id="userName" name="userName" />
 			</div>
 			
+			
+			</form>
+
 			<div class="form-group has-feedback">
 			<button class="btn" type="button" id="submit">회원가입</button>
 			<button class="cencle btn btn-danger" type="button">취소</button>
 			</div>
 			</div>
-			
-			</form>
-
 
 			
 		

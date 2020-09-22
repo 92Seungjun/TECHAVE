@@ -97,8 +97,8 @@
 							</tr>
 							<tr>
 								<td>
-									<button class="write_btn" type="submit">작성</button>
-									<button class="fileAdd_btn" type="button">파일추가</button>
+									<button class="update_btn btn btn-warning" type="submit">작성</button>
+									<button class="list_btn btn btn-primary" type="button">파일추가</button>
 								</td>
 							</tr>
 						</c:if>

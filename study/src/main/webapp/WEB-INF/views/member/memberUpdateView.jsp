@@ -60,8 +60,9 @@
 </script>
 <body>
 	<section id="container">
+	<div class="login-box">
 		<form id="updateForm" action="/member/memberUpdate" method="post">
-		<div class="login-box">
+		
 			<div class="form-group has-feedback">
 				<label class="control-label" for="userId">아이디</label> <input
 					class="form-control" type="text" id="userId" name="userId"
@@ -77,12 +78,13 @@
 					value="${member.userName}" />
 			</div>
 		
+		</form>
+		
 		<div class="form-group has-feedback">
 			<button class="btn btn-success" type="button" id="submit">회원정보수정</button>
 			<button class="cencle btn btn-danger" type="button">취소</button>
 		</div>
 		</div>
-		</form>
 		
 	</section>
 
