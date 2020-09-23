@@ -7,5 +7,6 @@ public class HelloWorld {
         System.out.println("kwak!");
         System.out.println("asdf");
         System.out.println("asdfz");
+        System.out.println("오류가 왜나냐 ㅡㅡ");
     }
 }
