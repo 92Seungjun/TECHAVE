@@ -4,5 +4,6 @@ public class HelloWorld {
         System.out.println("Hello, Branch!");
         System.out.println("Bye, Branch!");
         System.out.println("Hello, Seunghwan!");
+        System.out.println("Hello, yejin!");
     }
 }
