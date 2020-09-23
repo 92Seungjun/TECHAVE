@@ -6,5 +6,6 @@ public class HelloWorld {
         System.out.println("Seunghwan!");
         System.out.println("kwak!");
         System.out.println("asdf");
+        System.out.println("asdfz");
     }
 }
