@@ -3,12 +3,8 @@ public class HelloWorld {
         System.out.println("Hello, world!");
         System.out.println("Hello, Branch!");
         System.out.println("Bye, Branch!");
-<<<<<<< HEAD
-        System.out.println("Hello, Seunghwan!");
-        System.out.println("Hello, yejin!");
-=======
-        System.out.println("Seunghwan!");
         System.out.println("kwak!");
->>>>>>> e38daa1faa72b1fcc8e609b37e06e92adf696f64
+        System.out.println("asdf");
+        System.out.println("yj test");
     }
 }
